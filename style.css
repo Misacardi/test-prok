@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+body {
+
+    font-family: 'Inter', sans-serif;
+}
+  
+  * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+
+    ul,
+    ol {
+      padding: 0;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    ul,
+    ol,
+    li,
+    figure,
+    figcaption,
+    blockquote,
+    dl,
+    dd {
+      margin: 0;
+      color: #ffffff
+    }
+    
+ 
+    body {
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5;
+    }
+    
+  
+    ul,
+    ol {
+      list-style: none;
+    }
+    
+  
+    a:not() {
+      text-decoration-skip-ink: auto;
+    }
+    
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    
+
+    article > * + * {
+      margin-top: 1em;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+      font: inherit;
+    }
+    
+    button {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      color: #ffff;
+    }
+
+
+    .container {
+        margin: 0 auto;
+        max-width: 1036px;
+    }
+
+
+
+    .mail {
+        color: #000;
+       width: 1440px;
+        margin: 0 auto;
+
+    }
+
+
+    .mail__inner { 
+        display: flex;
+    }
+
+
+    .state {
+        width: 1160px;
+        display: flex;
+        background-color: #F6F7FA;
+
+    flex-direction: column;
+    }
+
+     .title {
+        margin-top: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+    }
+
+    .title::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        background-color: #EAECF0;
+        width: 100%;
+    }
+
+    .state__inner {
+        margin-top: 90px;
+    }
+    
+    .state__circles {
+        display: flex;
+       
+        column-gap: 144px;
+    }
+    .state__circles-item {
+        color: #8E99AB;
+        position: relative;
+        text-align: center;
+        font-weight: 500;
+        
+    }
+    .setting  {
+        margin-bottom: 40px;
+    }
+    .state__circles-item div {
+        margin-bottom: 16px;
+        
+        width: 72px;
+        height: 72px;
+        background-color: #EAECF0;
+        box-shadow: 0px 5px 5px 0px #00000049;
+
+        border-radius: 50%;   
+     }
+     .active {
+        color: #000;
+     }
+     .active div { 
+        background-color: #1FC0AE;
+     }
+
+     .active::after {
+
+        content: '';
+        bottom: 65%;
+        left: 80px;
+        position: absolute;
+        width: 159px;
+        height: 1px;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        border-image: repeating-linear-gradient(to right, transparent, transparent 4px, #009FE3 3px, #009FE3 10px) 1;
+      }
+
+
+      .unactive::after {
+        content: '';
+        bottom: 65%;
+        left: 80px;
+        position: absolute;
+        width: 159px;
+        height: 1px;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        border-image: repeating-linear-gradient(to right, transparent, transparent 4px, #EAECF0 3px, #EAECF0 10px) 1;
+      }
+
+
+
+    .menu {
+        width: 280px;
+        height: 826px;
+        padding: 32px 0 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .link-item {
+        cursor: pointer;
+        transition: .5s;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 16px;
+        width: 248px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        color: #000;
+    }
+
+    .link-item:hover {
+        background-color: #1FC0AE30;
+    }
+
+
+    .link-item__icon {
+        margin: 11px 15px;
+        width: 19px;
+        height:19px;
+    }
+
+
+
+
+
+
+    /* product */
+
+
+
+    .product {
+        margin-top: 68px;
+    }
+.product__inner {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  
+}
+    .info {
+        border-radius: 12px;
+        background-color: #ffff;
+        width: 508px;
+        height: 131px;
+       
+    }
+
+
+    .info__inner {
+        margin: 17px;
+    }
+
+
+
+    .info__title{
+        font-size: 20px;
+        font-weight: 500;
+        color: #1B1B1B;
+        margin-bottom: 20px;
+    }
+    .info__num {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+     
+    }
+
+
+    .info__num  div {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    .info__num span {
+        color: #8E99AB;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .location__inner {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        align-items: center;
+        column-gap: 120px;
+    }
+
+    .location__title div {
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .location__title span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .location__title  {
+        text-align: center;
+        color: #1FC0AE;
+    }
+
+    /* reorder */
+    .reorder {
+        margin-top: 14px;
+    }
+
+    .content {
+    
+        padding: 17px 20px;
+    }
+    .reorder__inner {
+    
+    height: 295px;
+    border-radius: 12px;
+    background-color: #ffffff;
+ }
+    .reorder-title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .dropdown div {
+        font-size: 12px;
+        color: #8E99AB;
+    }
+
+    .dropdown select {
+        border: 1px solid #EAECF0;
+        background-color: #F9FAFB;
+        border-radius: 8px;
+        color: #8E99AB;
+        font-size: 16px;
+        height: 40px;
+        width: 100%;
+        line-height: 24px;
+    }
+
+    .reorder__button {
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 8px;
+        background-color: #1FC0AE;
+    }
+
+    .select__default {
+        color: #000;
+    }
+
+
+    .dropdown {
+        margin-top: 17px;
+    }
+
+    .reorder__button {
+        margin-top: 50px;
+        float: right;
+    }
+
+
+
+
+
+
+
+   
